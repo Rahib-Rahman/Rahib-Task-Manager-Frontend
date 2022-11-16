@@ -15,6 +15,7 @@ const MasterLayout = (props) => {
 
     const onLogout=()=>{
         removeSessions();
+		window.location.href="/Login"
     }
 
     const MenuBarClickHandler = () => {
