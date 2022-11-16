@@ -1,6 +1,6 @@
 import React, {Fragment, useRef} from "react";
 import {Container,Navbar} from "react-bootstrap";
-import {NavLink, useNavigate} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import {AiOutlineCheckCircle, AiOutlineEdit, AiOutlineLogout, AiOutlineMenuUnfold, AiOutlineUser} from "react-icons/ai";
 import {BsHourglass, BsListNested} from "react-icons/bs";
 import logo from "../../assets/images/logo.svg";
@@ -12,11 +12,9 @@ import {getUserDetails, removeSessions} from "../../helper/SessionHelper";
 const MasterLayout = (props) => {
 
     let contentRef,sideNavRef=useRef();
-    let navigate=useNavigate();
-	
+    
     const onLogout=()=>{
         removeSessions();
-		navigate("/Login");
     }
 
     const MenuBarClickHandler = () => {
