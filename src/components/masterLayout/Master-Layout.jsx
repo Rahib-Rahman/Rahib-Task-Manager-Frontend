@@ -12,10 +12,11 @@ import {getUserDetails, removeSessions} from "../../helper/SessionHelper";
 const MasterLayout = (props) => {
 
     let contentRef,sideNavRef=useRef();
-
+    let navigate=useNavigate();
+	
     const onLogout=()=>{
         removeSessions();
-		window.location.href="/Login";
+		navigate("/Login");
     }
 
     const MenuBarClickHandler = () => {
