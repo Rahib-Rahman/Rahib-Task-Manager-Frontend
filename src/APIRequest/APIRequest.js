@@ -6,7 +6,7 @@ import {getToken, setEmail, setOTP, setToken, setUserDetails} from "../helper/Se
 import {SetCanceledTask, SetCompletedTask, SetNewTask, SetProgressTask} from "../redux/state-slice/task-slice";
 import {SetSummary} from "../redux/state-slice/summary-slice";
 import {SetProfile} from "../redux/state-slice/profile-slice";
-const BaseURL="https://mern-task-manager-rahib.herokuapp.com/api/v1"
+const BaseURL="https://rahib-task-manager-backend.onrender.com/api/v1"
 
 const AxiosHeader={headers:{"token":getToken()}}
 
